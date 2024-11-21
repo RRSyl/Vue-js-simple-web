@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue Js Tugas 2</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+  <style>
+    .orange-text {
+      color: orange;
+      font-size: 24px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <p class="orange-text">{{ message }}</p>
+  </div>
+
+  <script>
+    const app = Vue.createApp({
+      data() {
+        return {
+          message: "Selamat pagi tutor, ini adalah tugas kedua saya"
+        };
+      }
+    });
+
+    app.mount('#app');
+  </script>
+</body>
+</html>
